@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HW4.Controller">
+    <TextArea fx:id="mainArea" editable="false" VBox.vgrow="ALWAYS" />
+    <HBox>
+        <TextField fx:id="msgField" maxWidth="1.7976931348623157E308" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onAction="#sendMsgAction" prefHeight="31.0" prefWidth="585.0" promptText="Введите сообщение..." HBox.hgrow="NEVER">
+            <font>
+                <Font name="Helvetica Neue Condensed Black" size="15.0" />
+            </font>
+        </TextField>
+        <Button alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#sendMsgAction" prefHeight="31.0" prefWidth="80.0" text="Send" HBox.hgrow="ALWAYS">
+            <font>
+                <Font name="Helvetica Neue Condensed Bold" size="15.0" />
+            </font>
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </Button>
+    </HBox>
+
+
+</VBox>
